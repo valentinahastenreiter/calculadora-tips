@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculadora Tips</title>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+<div class="card__logo">
+  <img src="../images/logo.svg" alt="Logo calculadora">
+</div>
+<section class="card-externo">
+  <div class="card-interno">
+    <div class="card__calculo">
+      <div class="card__container">
+        <label for="bill" class="">Bill</label>
+        <input type="text" id="bill" placeholder="Digite o valor da conta" id="valorConta">
+      </div>
+      <div class="card__tip">
+        <h2 class="card__title">Select Tip %</h2>
+        <div class="card__button">
+          <div class="card__grid">
+            <button id="buttonTip5" class="button-tip" onclick="" value="0.05">5%</button>
+          </div>
+          <div class="card__grid">
+            <button id="buttonTip10" class="button-tip" onclick="" value="0.10">10%</button>
+          </div>
+          <div class="card__grid">
+            <button id="buttonTip15" class="button-tip" onclick="" value="0.15">15%</button>
+          </div>
+          <div class="card__grid">
+            <button id="buttonTip25" class="button-tip" onclick="" value="0.25">25%</button>
+          </div>
+          <div class="card__grid">
+            <button id="buttonTip50" class="button-tip " onclick="" value="0.50">50%</button>
+          </div>
+          <div class="card__grid">
+            <div class="card__container">
+              <input type="number" id="tipCustom" class= "input-tip" onclick="" placeholder="Custom"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card__container">
+        <label for="numberPeople">Number of People</label>
+        <input type="text" id="numberPeople" placeholder="Digite o número de pessoas na mesa" id="numeroDePessoas">
+      </div>
+    </div>
+    <div class="card__historico">
+      <div class="card__historico__container">
+        <h2 class="card__historico__title">Tip Amount</h2>
+        <h3 class="card__historico_subtitle">/ person</h3>
+      </div>
+      <div class="card__historico__container">
+        <h2 class="card__historico__title">Total</h2>
+        <h3 class="card__historico_subtitle">/ person</h3>
+      </div>
+      <button class="button-clear" onclick="">RESET</button>  
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+.card__logo {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-interno{
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+
+.card__calculo{
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__calculo {
+  font-size: 16px;
+  color: hsl(186, 14%, 43%);
+  display: flex;
+  flex-direction: column;
+}
+
+.card__container{
+  margin-top: 20px;
+}
+
+.card__container input {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  background-color: hsl(189, 41%, 97%);
+  border: solid hsl(189, 41%, 97%);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.card__container label{
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.card__tip{
+  justify-content: space-between;
+}
+
+.card__title{
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.card__button{
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.card__grid{
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.button-tip {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: hsl(183, 100%, 15%);
+  height: 50px;
+  border-radius: 10px;
+  border: solid;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input-tip{
+  display: block;
+  width: 100%;
+}
+
+.card__historico{
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 30px 0 30px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__historico__container{
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.card__historico__title{
+  font-size: 16px;
+  margin: 0 0 0 15px;
+}
+
+.card__historico_subtitle {
+  font-size: 10px;
+  margin: 0 0 0 15px;
+}
+
+.button-clear{
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  background-color: #25c2ad;
+  border: solid #25c2ad;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  margin: 10px 10%;
+
+}
+
+
+
