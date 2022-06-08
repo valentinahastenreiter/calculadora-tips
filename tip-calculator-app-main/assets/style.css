@@ -69,6 +69,7 @@ body {
 
 .card__tip{
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .card__subtitle{
