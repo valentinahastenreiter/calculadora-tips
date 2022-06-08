@@ -20,49 +20,53 @@
   <div class="card-interno">
     <div class="card__calculo">
       <div class="card__container">
-        <label for="bill" class="">Bill</label>
-        <input type="text" id="bill" placeholder="Digite o valor da conta" id="valorConta">
+        <label for="valorConta" class="">Bill</label>
+        <input class="input__padrao" type="number" placeholder="Digite o valor da conta" id="valorConta">
       </div>
       <div class="card__tip">
-        <h2 class="card__title">Select Tip %</h2>
+        <h2 class="card__subtitle">Select Tip %</h2>
         <div class="card__button">
           <div class="card__grid">
-            <button id="buttonTip5" class="button-tip" onclick="" value="0.05">5%</button>
+            <button class="button-tip" onclick="botao(5)">5%</button>
           </div>
           <div class="card__grid">
-            <button id="buttonTip10" class="button-tip" onclick="" value="0.10">10%</button>
+            <button class="button-tip" onclick="botao(10)">10%</button>
           </div>
           <div class="card__grid">
-            <button id="buttonTip15" class="button-tip" onclick="" value="0.15">15%</button>
+            <button class="button-tip" onclick="botao(15)">15%</button>
           </div>
           <div class="card__grid">
-            <button id="buttonTip25" class="button-tip" onclick="" value="0.25">25%</button>
+            <button class="button-tip" onclick="botao(25)">25%</button>
           </div>
           <div class="card__grid">
-            <button id="buttonTip50" class="button-tip " onclick="" value="0.50">50%</button>
+            <button class="button-tip " onclick="botao(50)">50%</button>
           </div>
           <div class="card__grid">
-            <div class="card__container">
-              <input type="number" id="tipCustom" class= "input-tip" onclick="" placeholder="Custom"/>
+            <div class="card__input">
+              <input type="number" id="tipCustom" class="input__padrao input-tip" onchange="botao(value)" placeholder="Custom"/>
             </div>
           </div>
         </div>
       </div>
-      <div class="card__container">
+      <div class="card__input">
         <label for="numberPeople">Number of People</label>
-        <input type="text" id="numberPeople" placeholder="Digite o número de pessoas na mesa" id="numeroDePessoas">
+        <input class="input__padrao" type="text" id="numberPeople" placeholder="Digite o número de pessoas na mesa" id="numeroDePessoas">
       </div>
     </div>
     <div class="card__historico">
       <div class="card__historico__container">
         <h2 class="card__historico__title">Tip Amount</h2>
         <h3 class="card__historico_subtitle">/ person</h3>
+        <p id="tipAmountPerson"></p>
       </div>
       <div class="card__historico__container">
         <h2 class="card__historico__title">Total</h2>
         <h3 class="card__historico_subtitle">/ person</h3>
+        <p id="totalPerson"></p>
       </div>
-      <button class="button-clear" onclick="">RESET</button>  
+      <div>
+        <button id="clean" class="button-clear" onclick= "clean()">RESET</button> 
+      </div>
     </div>
   </div>
 </section>

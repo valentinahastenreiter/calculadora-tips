@@ -36,30 +36,45 @@ body {
   margin-top: 20px;
 }
 
-.card__container input {
+.input__padrao {
   font-size: 16px;
   font-weight: 600;
   width: 100%;
   background-color: hsl(189, 41%, 97%);
   border: solid hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
   border-radius: 3px;
-  padding: 10px;
+  padding: 15px 20px;
+  float: right;
+  transition: 450ms ease-in-out;
+}
+
+/*Pesquisar sobre as propriedades do Placeholder */
+
+.input-tip, .input__padrao:hover{
+  border: 1px solid hsl(189, 41%, 97%) ;
+  
+}
+
+#valorConta{
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .card__container label{
   margin-bottom: 15px;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .card__tip{
   justify-content: space-between;
 }
 
-.card__title{
+.card__subtitle{
   font-size: 16px;
   font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0px 10px 3px;
 }
 
 .card__button{
@@ -87,11 +102,23 @@ body {
   margin: auto;
   box-sizing: border-box;
   width: 100%;
+  transition: 450ms ease-in-out;
+}
+
+.button-tip:hover{
+  color:hsl(183, 100%, 15%);
+  background-color: #25c2ad;
+  border: solid #25c2ad;
 }
 
 .input-tip{
   display: block;
   width: 100%;
+  border: none;
+  height: 50px;
+  align-self: flex-start;
+  margin: auto;
+  text-align: center;
 }
 
 .card__historico{
@@ -99,10 +126,16 @@ body {
   border-radius: 20px;
   font-size: 18px;
   color: #ffffff;
-  margin: 0 30px 0 30px;
-  height: 20vh;
+  margin: 0 30px;
+  height: 25vh;
   display: flex;
   flex-direction: column;
+}
+
+#numberPeople{
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .card__historico__container{
@@ -117,7 +150,9 @@ body {
 
 .card__historico_subtitle {
   font-size: 10px;
+  font-weight: 700;
   margin: 0 0 0 15px;
+  color: hsl(184, 14%, 56%);
 }
 
 .button-clear{
@@ -129,9 +164,52 @@ body {
   border-radius: 5px;
   width: 80%;
   height: 40px;
-  margin: 10px 10%;
+  margin: 30px 10%;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .card__logo {
+    margin-top: 100px;
+  }
+
+  .card-externo{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box;
+  }
+
+  .card-interno{
+    display: flex;
+    width: 60%;
+    height: 50vh;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+
+  .card__calculo{
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .card__historico{
+    width: 50%;
+    height: 90%;
+    margin: 30px 30px 60px;
+    display: flex;
+  }
+
+  .card__historico__container{
+    margin: 60px 20px 0px 20px;
+  }
+
+  .button-clear{
+    margin-top: 150px;
+  }
 
 }
+
 
 
 
